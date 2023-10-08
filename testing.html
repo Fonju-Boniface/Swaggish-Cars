@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img {
+            width: 200px;
+
+        }
+
+         .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            background: rgb(2, 2, 39);
+            gap: 1rem;
+            color: #fff;
+        }
+    </style>
+
+
+
+    <!-- GENERAL  CSS LINK ==================== -->
+    <!-- <link rel="stylesheet" href="./assets/css/styles.css" /> -->
+
+</head>
+
+<body>
+
+
+    <!-- home section  tab contents -->
+
+    <!-- <nav class="sideNav">
+        <p class="tablink" onclick="opentabCont('Internet')"><b> The Internet</b></p>
+        <p class="tablink" onclick="opentabCont('WebSite')"><b> WebSite</b></p>
+        <p class="tablink" onclick="opentabCont('WebPage')"><b>WebPage</b></p>
+        <p class="tablink" onclick="opentabCont('Developemnt')"><b> web Developemnt</b></p>
+        <p class="tablink" onclick="opentabCont('Design')"><b> web Design</b></p>
+        <p class="tablink" onclick="opentabCont('Front')"><b>Front End Developement</b></p>
+        <p class="tablink" onclick="opentabCont('Back')"><b>Back End Developement</b></p>
+        <p class="tablink" onclick="opentabCont('Github')"><b>Git and Github</b></p>
+        <p class="tablink" onclick="opentabCont('HTML')"><b> HTML</b></p>
+        <p class="tablink" onclick="opentabCont('CSS')"><b> CSS</b></p>
+        <p class="tablink" onclick="opentabCont('JavaScript')"><b> JavaScript</b></p>
+        <p class="tablink" onclick="opentabCont('Portfolio')"><b> Portfolio</b></p>
+    </nav>
+
+    <div class="conta">
+        <div class="tab-content" id="Internet">
+            <h1> What is the <b>Internet</b></h1>
+
+            <p>the Internet </p>
+        </div>
+        <div class="tab-content" id="Intro">
+            <h1> I'm <b>Fongang Fonju Boniface</b></h1>
+            <h3>Frontend designer & Graphic Designer</h3>
+
+        </div>
+        <div class="tab-content" id="WebSite">
+            <h1> What is the <b>Internet</b></h1>
+
+            <p>the Internet </p>
+        </div>
+        <div class="tab-content" id="WebPage">
+            <h1> What is the <b>Internet</b></h1>
+
+            <p>the Internet </p>
+        </div>
+        <div class="tab-content" id="Developemnt">
+            <h1> What is the <b>Internet</b></h1>
+
+            <p>the Internet </p>
+        </div>
+        <div class="tab-content" id="Design">
+            <h1> What is the <b>Internet</b></h1>
+
+            <p>the Internet </p>
+        </div>
+        <div class="tab-content" id="Front">
+            <h1> What is the <b>Internet</b></h1>
+
+            <p>the Internet </p>
+        </div>
+        <div class="tab-content" id="Back">
+            <h1> What is the <b>Internet</b></h1>
+
+            <p>the Internet </p>
+        </div>
+        <div class="tab-content" id="Github">
+            <h1> What is the <b>Internet</b></h1>
+
+            <p>the Internet </p>
+        </div>
+        <div class="tab-content" id="HTML">
+            <h1> What is the <b>Internet</b></h1>
+
+            <p>the Internet </p>
+        </div>
+        <div class="tab-content" id="CSS">
+            <h1> What is the <b>Internet</b></h1>
+
+            <p>the Internet </p>
+        </div>
+        <div class="tab-content" id="JavaScript">
+            <h1> What is the <b>Internet</b></h1>
+
+            <p>the Internet </p>
+        </div>
+        <div class="tab-content" id="Portfolio">
+            <h1> What is the <b>Internet</b></h1>
+
+            <p>the Internet </p>
+        </div>
+        
+    </div> -->
+
+
+    <!-- <div id="LamborList"></div> -->
+   
+    <div class="prevprice item">
+        <img src="https://images.pexels.com/photos/15857477/pexels-photo-15857477/free-photo-of-red-walls-of-tunnel.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="baby fabric shoes" width="30" 
+        class="img-item scaleNone" />
+        <h4 class="title-item scaleNone">baby fabric shoes</h4>
+        <h2 class="price-item scaleNone">4.00</h2>
+
+        
+        <button class="button-item">Add this product</button>
+    </div>
+
+    <!-- cart items all =================================  -->
+    <div class="cart" id="cart">
+
+
+        <div class="cart-items">
+
+        </div>
+        <!-- increment -->
+    </div>
+
+
+    <div class="cart-items"></div>
+    <div class="cart-total">
+        <div class="grandTotal">
+            <strong>Grand Total</strong>
+
+
+            <b id="grandTotal">00</b>
+            <b id="currencyChange"></b>
+        </div>
+        <p>you have <b id="CartLenght"></b> <b></b></p>
+        <button class="btn-clear">
+            clear <i class="fa-solid fa-trash"></i>
+        </button>
+    </div>
+
+
+
+
+
+    <span class="cart-price-total"> 0,00 </span>
+
+
+
+    <!-- <script src="./assets/js/cart.js"></script> -->
+    <!-- <script src=".//assets/js/cartItems.js"></script> -->
+
+    <!-- <script>
+        $(".owl-carousel").owlCarousel({
+
+
+            // margin: 10,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 10000,
+            autoplayHoverPause: true,
+            items: 1,
+            // Responsive
+            // responsive: true,
+            // items: 1,
+            // itemsDesktop: [1199, 4],
+            // itemsDesktopSmall: [980, 3],
+            // itemsTablet: [768, 2],
+            // itemsMobile: [479, 1]
+
+        })
+    </script> -->
+
+    <!-- <script src="./testing.js"></script> -->
+</body>
+
+</html>

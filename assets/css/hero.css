@@ -1,0 +1,228 @@
+
+.Hero{
+    /* padding-top: 1rem; */
+}
+/* MERO SLIDER CSS ================= */
+.topBrandsCard .img{
+    max-width: 5rem;
+}
+
+.wrapper{
+    /* min-height: 100vh; */
+    width: 100%;
+    flex-direction: column;
+    
+}
+
+.owl-carousel .carouselItem{
+    background: var(--ifm-color-primary-w);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    color: var(--ifm-color-primary-g);
+    /* padding: 200px; */
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+
+} 
+.carouselItem .empty{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--spinback);
+    /* filter: blur(11rem); */
+}
+
+ /* first slide content =========================================== */
+
+.carouselItem .content, .carouselItem .box, .carouselItem .box .topBrands, .carouselItem .box .topBrands .topBrandsCard{
+    z-index: 1;
+    /* background: var(--bg-color1-op-0-dipres); */
+    gap: .5rem;
+    padding: .5rem;
+    align-items: flex-start;
+}
+.carouselItem .content{
+    flex-direction: column;
+    /* border-bottom: .06rem var(--border-color1-g-tish); */
+    /* border-right: .06rem var(--border-color1-g-tish); */
+}
+.content .content-text{
+    gap: .5rem;
+    /* text-align: center; */
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.content .content-text h1{
+    color: var(--ifm-color-primary-g-depres);
+    font-size: 220%;
+    border-bottom: .06rem var(--border-color1-g-tish);
+    border-left: .06rem var(--border-color1-g-tish);
+    padding: .5rem .5rem;
+}
+.content .content-text p{
+    font-size: 110%;
+    position: relative;
+}
+/* .content .content-text p::before{
+    content: "";
+    position: absolute;
+    left: -1rem;
+    top: 0;
+    width: .5rem;
+    height: .5rem;
+    background: var(--ifm-color-primary-g-depres);
+    z-index: 1;
+} */
+
+/* top brands box ================= */
+.carouselItem .box{
+    flex-direction: column;
+    margin-top: 1rem;
+    background: none;
+    align-items: center;
+    width: 100%;
+
+}
+.carouselItem .box h3{
+    font-size: 150%;
+    color: var(--ifm-color-primary-w);
+    border-bottom: .06rem var(--border-color1-g-tish);
+    border-left: .06rem var(--border-color1-g-tish);
+    padding: .5rem .5rem;
+}
+
+.carouselItem .box .topBrands{
+    flex-wrap: wrap;
+    background: none;
+    gap: 1rem;
+    /* background: red; */
+    width: 100%;
+}
+.carouselItem .box .topBrands .topBrandsCard{
+    background: var(--bg-color1-op-0-dipres);
+    flex-direction: column;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 120px;
+    min-width: 120px;
+    width: 100%;
+    
+}
+.carouselItem .box .topBrands .topBrandsCard:hover{
+    /* outline: .06rem var(--border-color1-g-tish); */
+    background: var(--bg-color1-op-1);
+
+}
+.topBrandsCard .img{
+    width: auto;
+    height: 3rem;
+    object-fit: cover;
+    transform: scale(.7);
+    
+}
+.topBrandsCard:hover .img{
+    transform: scale(1.2);
+}
+.carouselItem .box .topBrands .topBrandsCard .titletext{
+    color: var(--ifm-color-primary-w);
+    text-transform: capitalize;
+}
+.carouselItem .box .topBrands .topBrandsCard a{
+    padding: .3rem .5rem;
+    background: var(--ifm-color-primary-g-depres);
+    color: var(--ifm-color-primary-w);
+}
+.carouselItem .box .topBrands .topBrandsCard a:hover{
+    background: var(--bg-color1-op-0-dipres);
+    outline: .06rem var(--border-color1-g-tish);
+
+}
+
+@media screen and (max-width: 500px){
+.carouselItem .box{
+    display: none;
+}
+.carouselItem{
+    padding: .5rem;
+}
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .items1:nth-child(1){
+    background-image: url(../imgs/lamborBgtwin.png);
+}
+.items2:nth-child(1){
+    background-image: url(../imgs/lamborBgtwin.png);
+} */
+
+
+/* .owl-carousel .carouselItem:nth-child(2){
+    background-image: url(../imgs/lamborBg.png);
+} */
+/* .owl-carousel .carouselItem:first-child{
+    background-image: url(../imgs/lamborBgtwin.png);
+} */
+/* .owl-carousel .carouselItem:first-child{
+    background-image: url(../imgs/lamborBgtwin.png);
+} */
+/* .owl-carousel .carouselItem:first-child{
+    background-image: url(../imgs/lamborBgtwin.png);
+} */
+/* .owl-carousel .carouselItem:first-child{
+    background-image: url(../imgs/lamborBgtwin.png);
+} */
+
+.owl-item.active{
+    background: green;
+}
+
+.owl-dots{
+    text-align: center;
+    /* margin-bottom: 5rem; */
+    width: 100%;
+    display: flex;
+    position: sticky;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    bottom: 1rem;
+    /* background: red; */
+}
+.owl-dot{
+    height: 15px;
+    width: 45px;
+    border-radius: 25px;
+    margin: 0 5px;
+    cursor: pointer;
+    outline: .06rem var(--border-color1-g-tish);
+    
+}
+.owl-dot:hover, .owl-dot.active{
+    background: var(--ifm-color-primary-g-depres)!important;
+}

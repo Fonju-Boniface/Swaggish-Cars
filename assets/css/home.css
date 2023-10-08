@@ -1,0 +1,35 @@
+
+
+
+.homeSects{
+    background-position: center;
+    background-size: cover;
+    min-height: 75vh;
+    width: 100%;
+    background: var(--bg-color1-op-0-dipres);
+    padding: 2rem;
+    gap: 1rem;
+    flex-wrap: wrap-reverse;
+}
+.homeSects .homeSectContent {
+    width: 20rem;
+    font-size: 1.1rem;
+}
+.homeSects .homeSectContent h1{
+    color: var(--ifm-color-primary-w);
+    margin-bottom: 2rem;
+}
+.homeSects .homeSectContent h1 b, .homeSects .homeSectContent h4{
+    color: var(--ifm-color-primary-g-depres);
+}
+.homeSects .homeSectContent{
+    text-align: left;
+
+}
+.homeSects .delImgae{
+    width: 30rem;
+}
+.homeSects .delImgae img{
+    width: 100%;
+    
+}

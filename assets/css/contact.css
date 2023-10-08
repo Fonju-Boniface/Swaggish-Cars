@@ -1,0 +1,248 @@
+
+.Contact {
+  /* padding: .5rem; */
+  padding-top: 80px;
+  background: var(--bg-color1-op-0-dipres);
+}
+
+.Contact h1{
+  margin-bottom: 1rem;
+}
+
+/* contact form css ===================== */
+.contact-blocks {
+  /* background: red; */
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+  position: relative;
+}
+input[type="text"], label{
+  text-transform: capitalize;
+  
+}
+
+textarea{
+  resize: none;
+}
+
+
+
+
+/* contact form main block css ======================  */
+.contact-form {
+  /* background:red; */
+  padding: 0.5rem;
+  flex-direction: column;
+  gap: 1rem;
+  flex-wrap: wrap;
+  /* background: red; */
+}
+
+/* contact form css ======================  */
+.contactform {
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem .5rem;
+  background: var(--bg-color1-op-0-dipres);
+}
+.contactform .form-blocks {
+  gap: 1rem;
+  flex-wrap: wrap;
+
+}
+.intContControl{
+    align-items: flex-start;
+    gap: .3rem;
+}
+.intContControl input.intCont, .intContControl textarea.intCont, .intContControl select.intCont{
+    width: 10rem;
+    color: #fff;
+
+}
+.intContControl input.intCont:focus, .intContControl textarea.intCont:focus, .intContControl select.intCont:focus, .intContControl input.intCont:hover, .intContControl textarea.intCont:hover, .intContControl select.intCont:hover{
+    background: var(--ifm-color-primary-w-depres);
+}
+input[type="text"]{
+  font-size: 1.2rem;
+}
+.contrlTexa{
+    width: 100%;
+}
+#SelectOption{
+    background: var(--ifm-color-primary-g-depres);
+}
+#SelectOption:hover{
+    /* color: blue; */
+
+}
+
+.contactform button{
+    color: var(--ifm-color-primary-w);
+    background: var(--ifm-color-primary-g-depres);
+    padding: .3rem 2rem;
+    font-size: 1.2rem;
+}
+.contactform button:hover{
+    background: var(--ifm-color-primary-g);
+}
+
+ 
+
+
+/* succss message pop up css */
+.contact-blocks .SuccesscontContact {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    gap: 1rem;
+    background: white;
+    text-align: center;
+    display: none;
+    z-index: 100;
+}
+.contact-blocks .SuccesscontContactActive{
+    display: flex;
+}
+
+.SuccesscontContact .suc {
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--bg-color1-op-0-dipres);
+  width: fit-content;
+}
+.SuccesscontContact .suc img {
+  width: 200px;
+}
+.SuccesscontContact .suc p {
+  font-size: 1.1rem;
+  padding: 0.5rem;
+}
+.SuccesscontContact .suc p b {
+  font-size: 1.5rem;
+  color: var(--ifm-color-primary-g-depres);
+}
+.SuccesscontContact .suc #closecontactform {
+  padding: 0.5rem 1.5rem;
+  font-size: x-large;
+  background: var(--ifm-color-primary-g-depres);
+  color: var(--ifm-color-primary-w);
+}
+.SuccesscontContact .suc #closecontactform:hover {
+  background-color: var(--bg-color1-op-1);
+  color: var(--ifm-color-primary-g-depres);
+}
+
+.successcontact {
+  outline: 1px solid green;
+}
+
+.errorcontact {
+  outline: 1px solid red;
+}
+.successcont input {
+  border-color: green;
+}
+.successcont textarea {
+  border-color: green;
+}
+.errorcont {
+  color: red;
+  /* border: 1px solid red; */
+}
+.errorcont input {
+  color: red;
+  border-color: red;
+}
+
+.errorcont textarea {
+  color: red;
+  border-color: red;
+}
+textarea {
+  width: 100%;
+}
+
+/* contact-form  location css ========================*/
+
+.contact-location{
+  /* background: red; */
+}
+/* contact info ============ */
+.contact-info{
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .5rem;
+  font-size: 1.1rem;
+  padding: .5rem;
+  background: var(--bg-color1-op-0-dipres);
+
+}
+.contact-info .info{
+  gap: .5rem;
+  padding: .3rem;
+}
+.contact-info .info i{
+  width: 2rem;
+  height: 2rem;
+  background: var(--ifm-color-primary-g-depres);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.contact-info .info:hover i{
+  background: var(--ifm-color-primary-g);
+  color: var(--ifm-color-primary-w);
+}
+.contact-info .info:hover{
+  background: var(--bg-color1-op-0-dipres);
+}
+.contact-info p b{
+  color: var(--ifm-color-primary-g-depres);
+}
+.contact-info p b:first-child{
+  color: var(--ifm-color-primary-g);
+}
+
+/* contact location map ============== */
+.map{
+  /* background: pink; */
+  flex-direction: column;
+  gap: 1rem;
+  /* align-items: flex-start; */
+  text-align: left;
+  width: 100%;
+  overflow: hidden;
+}
+iframe{
+  width: 80%;
+  /* background-color: red; */
+
+}
+
+
+/* responsive mode css ========================*/
+
+@media screen and (max-width: 768px) {
+  .contact-blocks{
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    grid-template-rows: minmax(3rem, auto);
+    grid-gap: 2rem;
+    padding:0 1rem 3rem 1rem;
+    
+  }
+}
+@media screen and (max-width: 400px) {
+  .contactform, .contactform .form-blocks, .intContControl{
+    width: 100%;
+  }
+  
+  .intCont{
+    min-width: 100%;
+  }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>main storage</title>
+    <style>
+      header {
+        width: 100%;
+        height: 30px;
+        /* overflow: hidden; */
+        /* border-radius: 100%; */
+        position: relative;
+        display: flex;
+        justify-content: end;
+        background: red;
+      }
+
+      header img {
+        width: 100px;
+        height: auto;
+        border-radius: 100%;
+      }
+
+      .hide {
+        display: none;
+      }
+      .image{
+        border: 2px solid red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="dude" id="bodd">
+      <h2 style="color: red;"></h2>
+    </div>
+    <!-- <header class="hearder">
+        
+    </header> -->
+
+    <input type="text" name="" id="inputname" />
+
+    <!-- <img src="" alt="" id="profile-pic" /> -->
+    <label for="file-input-element">choose profile pic</label>
+    <input class="hide" type="file" id="file-input-element" />
+    <button onclick="goodToGo()">Nice</button>
+
+    <script>
+    //   function goodToGo() {
+        const inputname = document.querySelector("#inputname");
+
+      h2 = document.querySelector("h2");
+
+      h2.innerHTML = localStorage.getItem("value");
+
+      
+          localStorage.setItem("value", inputname.value);
+          h2.innerHTML = localStorage.getItem("value");
+   
+
+
+      const inputEl = document.getElementById("file-input-element");
+      const BODD = document.getElementById("bodd");
+
+      inputEl.addEventListener("change", () => {
+        const file = inputEl.files[0];
+        const fr = new FileReader();
+        fr.readAsDataURL(file);
+
+        fr.addEventListener("load", () => {
+          const url = fr.result;
+          localStorage.setItem("image", url);
+          // Saves image to localStorage
+        });
+
+        
+        window.location.reload();
+      });
+      const url = localStorage.getItem("image");
+      // Get data URL from localStorage
+
+      const img = new Image();
+      img.src = url;
+      img.classList.add("image");
+      let header = document.createElement("header");
+      let deep = BODD.appendChild(header);
+      header.appendChild(img);
+      // document.getElementsByClassName("hearder").appendChild(img);
+      // Set URL as src of image and append to DOM
+    //   }
+    </script>
+  </body>
+</html>

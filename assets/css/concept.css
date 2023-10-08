@@ -1,0 +1,197 @@
+
+
+.Concept{
+    flex-direction: column;
+  }
+  .Concept.tab-content{
+    position: relative;
+    min-width: 100%;
+    
+  }
+  .Concept .bg{
+    width: 100%;
+    /* height: 100vh; */
+    top: 0;
+    z-index: -1;
+    /* display: none; */
+    position: fixed;
+    filter: blur(.5rem);
+  }
+   .active-tab .bg, .active-tab .carHero img{
+    transform: scale(.5);
+    animation: pushFull .7s linear forwards;
+    /* animation-delay: 1s; */
+  }
+  @keyframes pushFull {
+    0%{
+    transform: scale(.5);
+      
+    }
+    100%{
+      transform: scale(1);
+
+    }
+  }
+  .carHero{
+    z-index: 1;
+    /* background: red; */
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: var(--bg-color1-op-0-dipres);
+    gap: .5rem;
+  }
+  .carHero img{
+    width: 250px;
+  }
+  .carHero .content{
+    flex-direction: column;
+    text-align: center;
+  }
+  .carHero .content h1{
+    font-weight: 800;
+    font-size: 250%;
+  
+  }
+  .carHero .content h1 b{
+    color: var(--ifm-color-primary-g-depres);
+  }
+  .carHero .content p{
+    font-size: 1.1rem;
+  }
+
+
+  /* shop items css ==============================  */
+
+  .ShopItems{
+    z-index: 1;
+    /* background: red; */
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 100vh;
+    background: var(--bg-color1-op-0-dipres);
+    gap: 1rem; 
+    padding: 1rem;
+    position: relative;
+  }
+  .ShopItems .card{
+      width: 250px;
+      flex-direction: column;
+      padding: .3rem;
+      gap: .3rem;
+      background: var(--bg-color1-op-0-dipres);
+      position: relative;
+      
+    }
+    .ShopItems .card::before{
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        bottom: -.1rem;
+        left: -.1rem;
+        background: none;
+        z-index: -1;
+        border-left: .1rem var(--border-color1-g-tish);
+        border-bottom: .1rem var(--border-color1-g-tish);
+        transition: .3s ease-in-out;
+    }
+    .ShopItems .card:hover::before{
+        bottom: -.5rem;
+        left: -.5rem;
+        /* background: var(--bg-color1-op-0-dipres); */
+    }
+    .ShopItems .card:hover{
+        background: var(--bg-color1-op-1);
+    }
+    .ShopItems .card .imgBlock{
+        width: 230px;
+        height: 108px;
+        overflow: hidden;
+        /* border: .1rem var(--border-color1-g-tish); */
+        padding: .5rem;
+    }
+    .ShopItems .card .imgBlock img{
+        width: 100%;
+        transition: .3s ease-in-out;
+        
+    }
+    .ShopItems .card:hover .imgBlock{
+        padding: .2rem;
+    }
+    .ShopItems .card:hover .imgBlock img{
+        transform: rotateY(180deg);
+    }
+    .ShopItems .card h4{
+        color: var(--ifm-color-primary-g-depres);
+        font-size: 1.3rem;
+        padding: .3rem 0;
+        padding-left: 1rem;
+        text-align: left;
+        /* background: rebeccapurple; */
+        width: 100%;
+    }
+    .ShopItems .card p{
+        font-size: 1.1rem;
+        padding:0 1rem;  
+    }
+    .ShopItems .card .span{
+        flex-wrap: wrap;
+        gap: 4rem;
+        font-size: 1.1rem;
+        justify-content: space-between;
+        width: 100%;
+        padding:0 1rem;
+        
+
+    }
+    .ShopItems .card .span span b{
+        color: var(--ifm-color-primary-g-depres);
+    }
+    .ShopItems .card .span i{
+        width: 1.5rem;
+        height: 1.5rem;
+        background: var(--ifm-color-primary-g-depres);
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        /* color: var(); */
+        font-size: 1rem;
+        padding: .4rem;
+    }
+    .ShopItems .card .span i:hover{
+        background: var(--ifm-color-primary-g);
+        color: var(--ifm-color-primary-w);
+    }
+    .ShopItems .card button.button-item{
+        width: 100%;
+        padding: .5rem;
+        background: var(--ifm-color-primary-g-depres);
+        font-size: 1.1rem;
+        margin-top: .3rem;
+    }
+    .ShopItems .card button.button-item:hover{
+        background: var(--ifm-color-primary-g);
+        color: var(--ifm-color-primary-w);
+    }
+
+
+    /* responsive mode ====================== */
+
+    @media screen and (max-width: 550px) {
+      .ShopItems .card{
+        width: 100%;
+        height: fit-content;
+      }
+      .ShopItems .card .imgBlock{
+        width: 100%;
+        height: fit-content;
+        overflow: visible;
+        /* border: .1rem var(--border-color1-g-tish); */
+        padding: .5rem;
+    }
+    }
+    @media screen and (max-width: 320px) {
+      
+    }

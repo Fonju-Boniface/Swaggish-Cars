@@ -1,0 +1,42 @@
+
+
+
+
+
+
+main.main-tabs{
+    /* background: white; */
+    width: 100%;
+    /* min-height: 100vh; */
+}
+
+.tab-content{
+    display: none;
+    min-height: 100vh;
+    min-width: 100%;
+    margin-top: 91px;
+}
+
+.active-tab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: var(); */
+}
+.active-link{
+    background: var(--ifm-color-primary-g);
+    padding: .3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

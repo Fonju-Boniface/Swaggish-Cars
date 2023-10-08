@@ -1,0 +1,62 @@
+
+
+.Categories{
+    margin-bottom: 3rem;
+}
+.Categories .owl-dots{
+    display: none;
+} 
+.Categories .carousel{
+    padding: 1rem;
+    background: var(--bg-color1-op-1-dipres);
+    height: fit-content;
+}
+.cars-Cate{
+    background: var(--bg-color1-op-1);
+    /* max-width: 10rem; */
+    max-height: 6rem;
+    gap: .1rem;
+    justify-content: space-between;
+    text-align: right;
+    /* border: .1rem var(--border-color1-g-tish); */
+    padding: .5rem;
+}
+.cars-Cate:hover{
+    background: var(--bg-color1-op-0-dipres);
+}
+.cars-Cate .car-CateImgBox{
+    height: 8rem;
+    width: 8rem;
+    overflow: visible;
+    padding: .1rem;
+    
+}
+.cars-Cate .car-CateImgBox img{
+    width: 100%;
+    /* height: 100%; */
+}
+.cars-Cate:hover .car-CateImgBox img{
+   transform: scale(1.3);
+}
+.cars-Cate .content{
+    flex-direction: column;
+    /* gap: rem; */
+}
+.cars-Cate .content span:first-child{
+    font-size: 1.5rem;
+    padding: .3rem 0;
+    color: var(--ifm-color-primary-g-depres);
+    /* min-width: 100%; */
+}
+.cars-Cate .content span:nth-child(2){
+    font-size: 1rem;
+}
+
+.cars-Cate .content a{
+    padding: .2rem 1rem;
+    font-size: 1rem;
+    color: var(--ifm-color-primary-w);
+    background: var(--ifm-color-primary-g-depres);
+    margin: .3rem;
+    /* width: 4rem; */
+}

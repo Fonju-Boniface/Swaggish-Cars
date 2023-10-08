@@ -1,0 +1,91 @@
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: var(--ifm-color-primary-w-depres);
+  transition: .3s ease-in-out;
+  /* opacity: .9; */
+  cursor: default;
+}
+body, html{
+  scroll-behavior: smooth;
+}
+
+.bodY {
+  --ifm-color-primary-g: #740472;
+  --ifm-color-primary-w: #ffffff;
+    --bg-color1-op-1: #000000;
+    --bg-color1-op-0: #090a11d3;
+    --bg-color1-op-1-dipres: #20232a;
+    --bg-color1-op-0-dipres: #20232af3;
+    --border-color1-w: solid #ffffff;
+    --border-color1-w-tish: solid #ebe8e8;
+    --border-color1-w-tish: solid #ebe8e880;
+    --border-color1-g-tish: solid #380343;
+    --border-color1-g-tish: solid #9009d3c5;
+    --ifm-color-primary-w-depres: #b4b4b4;
+    --ifm-color-primary-g-depres: #f1c1e9;
+    --border-radius-small:.5rem;
+    --spinback:#000000de;
+  }
+  .ActiveBody{
+    --ifm-color-primary-g: #ff0062;
+    --ifm-color-primary-w: #000000;
+      --bg-color1-op-1: #ffffff;
+      --bg-color1-op-0: #ffffffd3;
+      --bg-color1-op-1-dipres: #000000;
+      --bg-color1-op-0-dipres: #d4d4d5d3;
+      --border-color1-w: solid #ffffff;
+      --border-color1-w-tish: solid #ebe8e8;
+      --border-color1-w-tish: solid #ebe8e880;
+      --border-color1-g-tish: solid #ff0062;
+      --border-color1-g-tish: solid #d3095680;
+      --ifm-color-primary-w-depres: #817e7e;
+      --ifm-color-primary-g-depres: #d30956;
+      --border-radius-small:.5rem;
+      --spinback:#fffefede;
+  }
+  .hide{
+    display: none;
+  }
+  img{
+    width: 100px;
+  }
+  .tooltip{
+    display: none;
+}
+body{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.allSections{
+  flex-direction: column;
+}
+
+
+.section{
+  min-height: 100vh;
+  min-width: 100%;
+  /* background: rgb(1, 1, 38); */
+  /* color: white; */
+  flex-direction: column;
+    /* justify-content: space-between; */
+}
+h1.header_sections{
+  color: var(--ifm-color-primary-w);
+  border-bottom: .06rem var(--border-color1-g-tish);
+    border-left: .06rem var(--border-color1-g-tish);
+    padding: .5rem .5rem;
+    width: fit-content;
+    margin-bottom: 3rem;
+    font-size: 250%;
+    
+}
+h1.header_sections b{
+  color: var(--ifm-color-primary-g-depres);
+}
